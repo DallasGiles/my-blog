@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+}
+.header{
+ display: flex;
+ text-align: start;
+ width: auto;
+ height: 100px;
+ background-color: aqua;
+}
+#sun{
+    align-self: flex-end;
+}
+.right{
+    margin-left: 1000px;
+    margin-top: 200px;
+}
+h2{
+    padding: 25px;
+}
+img{
+    float: left;
+}
+button {
+    background-color: #809768;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    letter-spacing: 0.21px;
+    line-height: 16px;
+    max-width: 255px;
+    padding: 20px 52px;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    margin: 0.6em auto;
+    display: block;
+  }
+.text-box{
+    padding: 0;
+height: 30px;
+position: relative;
+left: 0;
+outline: none;
+border: 1px solid #cdcdcd;
+border-color: rgba(0, 0, 0, .15);
+background-color: white;
+font-size: 16px;
+margin: 10px;
+}
+label{
+    padding: 50px;
+    margin: 25px;
+}
+@media only screen and (max-width: 800px) {
+    .card {
+      width: 80vw;
+    }
+}
