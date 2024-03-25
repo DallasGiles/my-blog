@@ -1,16 +1,24 @@
-const userName = document.querySelector('#username');
-const title = document.querySelector('#title');
-const content = document.querySelector('#content');
-const submitButton = document.querySelector('#button');
+const myForm = document.querySelector('#myForm');
 
-  submitButton.addEventListener('click', function (event) {
+if (myForm) {
+  myForm.addEventListener('submit', function(event) {
     event.preventDefault();
-  
-  const userName = document.querySelector('#username').value;
-  const title = document.querySelector('#title').value;
-  const content = document.querySelector('#content').value;
 
-    localStorage.setItem('first-name', JSON.stringify(userName));
-    localStorage.setItem('last-name', JSON.stringify(title));
-    localStorage.setItem('email', JSON.stringify(content)); 
+    const userNameValue = document.querySelector('#username').value;
+    const titleValue = document.querySelector('#title').value;
+    const contentValue = document.querySelector('#content').value;
+
+    let submissionsArray = JSON.parse(localStorage.getItem('submissions')) || [];
+    
+    submissionsArray.push({ userName: userNameValue, title: titleValue, content: contentValue });
+    
+    localStorage.setItem('submissions', JSON.stringify(submissionsArray));
+  
+    myForm.reset();
+    window.location.href = 'blog.html';
   });
+}
+
+
+
+

@@ -4,28 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel = "stylesheet" href="style.css">
+    <link rel = "stylesheet" href="assets/css/form.css">
 </head>
 <body>
-    <script src= "script.js"></script>
+    
     <header class="header"> 
+        
 </header>
 <section>
     <img src="https://i.pinimg.com/736x/44/70/b1/4470b1833f860e22b9bc5767cd33a2c4.jpg"></img>
 </section>
 <section class="right">
-
-    <h3> What's on your mind?</h3>
-
-    <label id="username">Username</label>
-    
-    <textarea class="text-box"></textarea>
-    <label id="title">Title</label>
-    <textarea class="text-box"></textarea>
-    <label id="content">content</label>
-    <textarea class="text-box"></textarea>
-    <button id="button"> submit
+    <form id="myForm">
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="title" placeholder="Title">
+        <textarea id="content" placeholder="Content"></textarea>
+        <button id="button">Submit</button>
+      </form>
     </button>
+    
 </section>
+<script src= "assets/js/form.js"></script>
 </body>
 </html>
