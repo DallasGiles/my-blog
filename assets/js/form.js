@@ -18,7 +18,9 @@ if (myForm) {
     window.location.href = 'blog.html';
   });
 }
-
+document.getElementById('darkModeToggle').addEventListener('click', function() {
+  document.body.classList.toggle('dark-mode');
+});
 
 
 
