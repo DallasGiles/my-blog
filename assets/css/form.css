@@ -5,7 +5,8 @@
 }
 .header{
  display: flex;
- text-align: start;
+ text-align: center;
+ justify-content: center;
  width: auto;
  height: 100px;
  background-color: aqua;
@@ -63,7 +64,7 @@ label{
 }
 /* Style for the form container */
 .form-container {
-    max-width: 400px;
+    max-width: none;
     margin: 0 auto;
     padding: 20px;
     background: #f4f4f4;

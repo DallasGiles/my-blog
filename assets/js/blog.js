@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         submissionUsername.textContent = `${submission.userName}`;
   
         const submissionContent = document.createElement('p');
-        submissionContent.textContent = `Content: ${submission.content}`;
+        submissionContent.textContent = `Content: \u00A0\u00A0${submission.content}`;
   
         newSubmissionSection.appendChild(submissionTitle);
         newSubmissionSection.appendChild(submissionUsername);
@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
         submissionsContainer.appendChild(newSubmissionSection);
       });
     }
+  });
+  document.getElementById('darkModeToggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
   });
   
   
